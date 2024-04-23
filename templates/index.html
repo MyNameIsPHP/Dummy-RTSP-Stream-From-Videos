@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Camera Streams</title>
+</head>
+<body>
+    <h1>Camera Streams</h1>
+
+    <img src="{{ url_for('stream_camera', camera_id=0) }}" width="640" height="480">
+    <img src="{{ url_for('stream_camera', camera_id=1) }}" width="640" height="480">
+    <img src="{{ url_for('stream_camera', camera_id=3) }}" width="640" height="480">
+
+</body>
+</html>
