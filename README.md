@@ -11,6 +11,9 @@ For GStreamer unsupported OS such as Windows, install Docker and run the followi
 ```
 docker build -t php/dummy_rtsp_stream .
 docker run -itd -v "$PWD/videos":/app/videos -p 8554:8554 php/dummy_rtsp_stream
+
+# Watch out for the volume mounting path, and edit it to work on your machine, example:
+docker run -itd -v .\videos\:/app/videos -p 8554:8554 php/dummy_rtsp_stream
 ```
 The RTSP links are generated in the format `rtsp://localhost:8554/<video_filename>`. These links are also shown in the container log.
 
