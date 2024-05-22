@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:22.04
 
 # ENV FPS=30
 # ENV IMAGE_WIDTH=400
